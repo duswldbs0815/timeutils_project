@@ -77,6 +77,8 @@ gcc -Og -Wall -Wextra -Iinclude test/main_static.c -Lbuild -ltimeutils -o build/
 ./build/main_static
 ```
 
+![Static Linking Result](images/static.png)
+
 
 
 
@@ -111,6 +113,8 @@ export LD_LIBRARY_PATH=./build:$LD_LIBRARY_PATH
 ./build/main_dynamic
 ```
 
+![Dynamic Linking Result](images/dynamic.png)
+
 
 
 ---
@@ -133,6 +137,8 @@ gcc -Og -Wall -Wextra test/main_runtime.c -ldl -o build/main_runtime
 ```bash
 ./build/main_runtime
 ```
+
+![Runtime Linking Result](images/runtime.png)
 
 
 ---
